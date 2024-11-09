@@ -1,0 +1,148 @@
+/* Navbar Styles */
+.navbar {
+    background-color: blue; 
+    padding: 20px 30px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    width: 94%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    color: #ffb900;
+    font-size: 21px; 
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+    margin: 0;
+    padding-left: 300px;
+    justify-content: flex-end; 
+    flex-grow: 1; 
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #ffb900; 
+    font-size: 20px; 
+    font-weight: bold; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #ffb900; 
+    text-decoration: none;
+    transform: scale(1.1); 
+}
+
+/* Admin link styling */
+.admin-link {
+    margin-left: auto; 
+    margin-right: 280px;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block; 
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8); 
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .nav-links li {
+        margin: 15px 0; 
+    }
+}
+
+/* Home Page Styling */
+.home {
+    position: relative;
+    height: 100vh; 
+    background-image: url('https://sunucun.com.tr/bilgi/wp-content/uploads/2024/03/kentlangley_imagine_a_modern_vibrant_classroom_setting._At_the__32d6c009-8b6e-41fc-ab15-0417b4c8efd6.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px; 
+    text-align: center; 
+}
+
+.home-background {
+    text-align: center;
+    padding: 20px;
+}
+
+.home-content {
+    z-index: 9999;
+}
+
+.home-content h2 {
+    color: #ffb900;
+    font-size: 50px;
+}
+
+.home-content p {
+    color: #ffb900;
+    font-size: 25px;
+}
+
+
+
+.apply-btn {
+    background-color: #ffdf00;
+    color: #333;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #ffb900; 
+    transform: scale(1.05); 
+}
+

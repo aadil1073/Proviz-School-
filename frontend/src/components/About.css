@@ -1,0 +1,99 @@
+.about {
+    padding: 50px 20px;
+    background-color: #f07b6f;
+    text-align: center;
+    margin-top: 80px; 
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #660a47;
+}
+
+.mission, .vision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mission-content, .vision-content {
+    padding-left: 20px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.mission h3, .vision h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.mission p, .vision p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.mission-image, .vision-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.testimonials {
+    margin-top: 60px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.testimonials h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #660a47;
+}
+
+.testimonial img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial p {
+    font-size: 20px;
+    color: black;
+}
+
+.testimonial p span {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+@media (max-width: 768px) {
+    .mission, .vision {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-content, .vision-content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .mission-image, .vision-image {
+        width: 150px;
+        height: 150px;
+    }
+}

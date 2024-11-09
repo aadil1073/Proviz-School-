@@ -1,0 +1,15 @@
+
+.footer {
+    background-color: blue; 
+    color: #ffb900;
+    text-align: center;
+    padding: 20px;
+    width: 96.8%;
+}
+
+.footer p {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+
